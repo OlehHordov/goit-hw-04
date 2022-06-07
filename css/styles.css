@@ -317,7 +317,6 @@ body {
   color: var(--main-text-color);
 }
 .team-item {
-  overflow: hidden;
   background-color: var(--hero-color);
   margin-right: 30px;
   padding-top: 30px;
