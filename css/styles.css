@@ -111,6 +111,7 @@ body {
 .header-contacts-link,
 .header-mail,
 .header-tel {
+  align-items: center;
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -177,7 +178,6 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #c4c4c4;
-  min-height: 600px;
   max-width: 1600px;
   background-position: center;
   background-size: cover;
@@ -296,15 +296,14 @@ body {
 
 .section-team {
   background-color: #f5f4fa;
-  padding-bottom: 0;
 }
 .team-list {
   display: flex;
 }
 .team-member {
+  font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-color);
   font-weight: 500;
@@ -320,22 +319,26 @@ body {
   background-color: var(--hero-color);
   margin-right: 30px;
   padding-top: 30px;
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 94px;
 }
+
 .team-item:last-child {
   margin-right: 0;
+}
+.initials {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .social-list {
   display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  width: 206px;
+  justify-content: center;
+  margin-right: 10px;
+}
+.social-list:last-child {
+  margin-right: 0;
 }
 .social-item {
   width: 44px;
@@ -372,14 +375,14 @@ body {
   width: 170px;
   height: 92px;
   margin-right: 30px;
-  border: 1px solid #afb1b8;
-  border-radius: 3px;
-  background-color: var(--hero-color);
 }
 .clients-item:last-child {
   margin-right: 0;
 }
 .clients-link {
+  border: 1px solid #afb1b8;
+  border-radius: 3px;
+  background-color: var(--hero-color);
   width: 100%;
   height: 100%;
   align-items: center;
@@ -407,6 +410,12 @@ body {
 }
 .logo-color {
   color: var(--hero-color);
+}
+.footer-item {
+  margin-bottom: 9px;
+}
+.foooter-item:last-child {
+  margin-bottom: 0;
 }
 .footer-address {
   font-style: normal;
@@ -447,17 +456,27 @@ body {
 .foot-social {
   margin-left: 70px;
 }
+.footer-title {
+  margin-bottom: 20px;
+}
 .social-link.f {
-  margin-top: 20px;
   color: var(--hero-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-
+.social-item.f {
+  margin-right: 10px;
+}
+.social-item.f:last-child {
+  margin-right: 0;
+}
 /* PORTFOLIO */
 
 .header-portfolio-link-accent {
   color: var(--accent-color);
+}
+.header-studio-link {
+  color: var(--title-color);
 }
 .visually-hidden {
   position: absolute;
@@ -472,6 +491,7 @@ body {
   clip-path: inset(50%);
   visibility: hidden;
 }
+/* Portfolio buttons */
 .portfolio-list-buttons {
   display: flex;
   justify-content: center;
@@ -498,25 +518,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.accent-filter-button {
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
-  padding: 6px 22px;
-  color: var(--hero-color);
-  border: rgba(0, 0, 0, 0.25);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  cursor: pointer;
-  letter-spacing: 0.03em;
-  background-color: #2196f3;
-}
+
 .filter-button:hover,
 .filter-button:focus {
-  color: var(--hero color);
+  color: var(--hero-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .portfolio-container {
   display: flex;
@@ -547,14 +556,13 @@ body {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-.portfolio-title {
+
+.porfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
-}
-.porfolio-title {
   margin-bottom: 4px;
 }
 .portfolio-text {
@@ -562,4 +570,16 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.social-item.f {
+  margin-right: 10px;
+}
+.social-item.f:last-child {
+  margin-right: 0;
 }
